@@ -61,7 +61,7 @@ During this guide we are going to learn how to use MicroProfile JWT in a Java re
 The Movie Fun website is an application... 
 
 ==== Movie Fun Architectural Diagram
-
+Deployment diagram to briefly show the technlogies used on each part of the OAuth 2.0 JWT workflow.
 
 === Resources
 * https://github.com/eclipse/microprofile-jwt-auth
