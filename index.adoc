@@ -1,0 +1,67 @@
+:encoding: UTF-8
+:linkattrs:
+:sectlink:
+:sectanchors:
+:sectid:
+:imagesdir: media
+:leveloffset: 1
+
+= Introduction MicroProfile JWT on TomEE
+Time: 10 minutes
+
+Learning objectives
+
+* MicroProfile JWT
+* OAuth 2.0 JWT basics
+* TomEE implementation setup
+
+
+
+Prerequisites
+
+* link:https://www.docker.com/community-edition[Docker, window="_blank"]
+* link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java 8, window="_blank"]
+* link:https://maven.apache.org/[Maven, window="_blank"]
+
+
+
+=== MicroProfile JWT
+
+
+Today RESTful microservice security is based on OAuth2, OpenID Connect and JSON Web Token (JWT) specifications, but the way you can implement them into your microservice architecture requires an standard that provides application portability across multiple MicroProfile runtimes. 
+
+Microprofile JWT is a specification that optimizes enterprise Java for the security of microservice architecture, it defines a baseline of modern RESTful security by relying in well known and proof Java technologies like: JAX-RS CDI and JSON-P.
+
+For RESTful based microservices, security tokens offer a very lightweight and interoperable way to propagate identities across different services, where:
+
+* Services don’t need to store any state about clients or users.
+
+* Services can verify the token validity if token follows a well known format. Otherwise, services may invoke a separated service.
+
+* Services can identify the caller by introspecting the token. If the token follows a well known format, services are capable to introspect the token by themselves, locally. Otherwise, services may invoke a separated service.
+
+* Services can enforce authorization policies based on any information within a security token.
+
+* Support for both delegation and impersonation of identities.
+
+==== OAuth 2.0 and JWT Architectural Diagram
+
+image::oauth2_and_jwt.png[]
+
+During this guide we are going to learn how to use MicroProfile JWT in a Java real world scenario using latest front end and back end technologies. This are the components involved in a OAuth 2.0 security schema:
+
+* Resource Owner is the entity that want to have access to a secure service via a Client Application. 
+* A Client Application who provide services in different platforms like desktops, mobile phones, tablets etc.
+* Resource Server contains the data that can only be accessed with Authentication and Authorization. This data is presented to the Resource Owner via the Client Application.
+* API Gateway (OAuth2 Server) is the provider of Authentication and Authorization to the Resource Server.
+
+
+
+=== The Movie Fun website
+The Movie Fun website is an application... 
+
+==== Movie Fun Architectural Diagram
+
+
+=== Resources
+* https://github.com/eclipse/microprofile-jwt-auth

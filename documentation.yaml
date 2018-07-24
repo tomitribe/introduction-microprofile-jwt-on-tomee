@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+documentation:
+
+  - doc_root: 'index.adoc'
+    name: 'Examples'
+    display_name: 'Introduction MicroProfile JWT on TomEE'
+    public_path: 'en/api-gateway/introduction-microprofile-jwt-on-tomee'
+    single_page: 'true'
