@@ -13,7 +13,7 @@ Learning objectives
 
 * MicroProfile JWT
 * OAuth 2.0 JWT basics
-* TomEE implementation setup
+* Apache TomEE MicroProfile JWT implementation setup
 
 
 
